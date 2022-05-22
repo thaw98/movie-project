@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nex Movie</title>
+    <!-- Bootstrap + Font Awesome-->
+    <link rel="stylesheet" href="./node_module/colormyar/css/pdf.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./packages/fontawesome/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="./node_module/waypoints/lib/noframework.waypoints.min.js"></script>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Swiper -->
+    <link rel="stylesheet" href="./node_module/swiper/swiper-bundle.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/custom.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav
+      class="navbar navbar-control navbar-expand-lg navbar-dark bg-dark animate__animated shadow-md"
+    >
+      <div
+        class="container d-flex justify-content-lg-center justify-content-between align-items-center"
+      >
+        <a
+          class="navbar-brand text-uppercase fs-2 hover-red flex-grow-1"
+          href="#"
+          ><i class="fa-solid fa-clapperboard-play"></i> Nex Movie</a
+        >
+        <div class="order-lg-3">
+          <a
+            class="text-decoration-none text-white position-relative"
+            title="Notifications"
+            href="#"
+          >
+            <i class="hover-red bell fa-solid fa-bell me-lg-3 me-2 fs-3"></i>
+            <span
+              class="position-absolute top-1 start-50 translate-middle badge rounded-pill bg-danger"
+            >
+              99+
+              <span class="visually-hidden">unread messages</span>
+            </span></a
+          >
+          <a class="text-decoration-none text-white" title="Profile" href="#">
+            <i class="hover-red fa-solid fa-user me-lg-3 me-2 fs-3"></i
+          ></a>
+          <a class="text-decoration-none text-white" title="Settings" href="#">
+            <i class="hover-red settings fa-solid fa-gear fs-3 me-md-2"></i>
+          </a>
+        </div>
+        <button
+          class="navbar-toggler border-0 ms-2"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-regular fa-bars fs-2"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav ms-auto me-auto mb-2 mb-lg-0 d-flex justify-content-center align-items-lg-center align-items-start"
+          >
+            <li class="nav-item">
+              <a
+                class="nav-link me-4 active-nav fs-5"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-4 fs-5" href="#">Movie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-5" href="#">TV Show</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Main -->
+    <div id="main" class="container-fluid mt-5">
+      <div
+        class="d-flex justify-content-between align-items-center flex-lg-row flex-column"
+      >
+        <!-- Left -->
+        <div class="col-lg-5 ms-md-5">
+          <div class="ms-lg-5">
+            <div
+              class="d-flex fw-bold justify-content-start align-items-center fs-5 mt-md-4 mt-5"
+            >
+              <i class="fa-solid fa-star pdf-text-yellow-400 me-lg-4 me-2"></i>
+              <span class="me-md-4 me-2">8.2</span>
+              <span class="me-md-5 me-3">-</span>
+              <span class="me-md-5 me-3">2017</span>
+              <span class="me-md-4 me-2">-</span>
+              <span class="me-md-3 me-2">5 Seasons</span>
+              <div class="rating-box border rounded px-2 py-1 fs-7 fw-normal">
+                18+
+              </div>
+            </div>
+            <div class="my-4">
+              <h1 class="text-uppercase fw-bolder">Money Heist</h1>
+            </div>
+            <div class="col-md-9">
+              <p>
+                Eight thieves take hostages and lock themselves in the Royal
+                Mint of Spain as a criminal mastermind manipulates the police to
+                carry out his plan.
+              </p>
+            </div>
+            <div class="mb-2">
+              <span class="pdf-text-stone-500">Starring:</span> Úrsula Corberó,
+              Álvaro Morte, Itziar Ituño
+            </div>
+            <div class="">
+              <span class="pdf-text-stone-500">Creators:</span> Álex Pina
+            </div>
+            <div class="d-flex justify-content-start align-items-center my-3">
+              <div class="border rounded-10 px-3 py-1 me-md-3 me-2">Action</div>
+              <div class="border rounded-10 px-3 py-1 me-md-3 me-2">Crime</div>
+              <div class="border rounded-10 px-3 py-1">Drama</div>
+            </div>
+            <div class="mt-4">
+              <button class="btn btn-danger bg-red py-2 me-2">
+                <i class="fa-solid fa-play mx-2"></i> Watch Now
+              </button>
+              <button class="btn btn-secondary pdf-bg-zinc-500 py-2">
+                <i class="fa-solid fa-plus-large mx-2"></i> Add to list
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Right -->
+        <div class="col-lg-6">
+          <img src="./img/banner.jpg" class="w-100" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- Trending-->
+    <div class="my-5" id="trending">
+      <div class="container">
+        <h2 class="mv-title fw-bolder ms-3">Trending</h2>
+        <div class="mt-5">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="text-start mb-5">
+                  <div class="movie">
+                    <img
+                      src="./img/squidgame.png"
+                      class="poster-img rounded-5 mb-2"
+                      alt=""
+                    />
+                    <div class="play-hover">
+                      <div class="play-btn">
+                        <i class="fa-regular fa-circle-play"></i>
+                      </div>
+                    </div>
+                  </div>
+
+                  <span class="fw-bold fs-5">Squid Game</span>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="">
+                      <i class="fa-solid fa-star pdf-text-yellow-400 me-1"></i
+                      >8.0
+                    </div>
+                    <div class="">
+                      <i class="fa-regular fa-eye me-1"></i>22K
+                      <i class="fa-solid fa-heart ms-2 heart"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="text-start mb-5">
+                  <div class="movie">
+                    <img
+                      src="./img/shangchi.jpg"
+                      class="poster-img rounded-5 mb-2"
+                      alt=""
+                    />
+                    <div class="play-hover">
+                      <div class="play-btn">
+                        <i class="fa-regular fa-circle-play"></i>
+                      </div>
+                    </div>
+                  </div>
+
+                  <span class="fw-bold fs-5">Shang Chi</span>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="">
+                      <i class="fa-solid fa-star pdf-text-yellow-400 me-1"></i
+                      >7.4
+                    </div>
+                    <div class="">
+                      <i class="fa-regular fa-eye me-1"></i>18K
+                      <i class="fa-solid fa-heart ms-2 heart"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="text-start mb-5">
+                  <div class="movie">
+                    <img
+                      src="./img/spiderman.jpg"
+                      class="poster-img rounded-5 mb-2"
+                      alt=""
+                    />
+                    <div class="play-hover">
+                      <div class="play-btn">
+                        <i class="fa-regular fa-circle-play"></i>
+                      </div>
+                    </div>
+                  </div>
+
+                  <span class="fw-bold fs-5">Spider Man</span>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="">
+                      <i class="fa-solid fa-star pdf-text-yellow-400 me-1"></i
+                      >8.0
+                    </div>
+                    <div class="">
+                      <i class="fa-regular fa-eye me-1"></i>9.7K
+                      <i class="fa-solid fa-heart ms-2 heart active"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="text-start mb-5">
+                  <div class="movie">
+                    <img
+                      src="./img/doctorstrange.jpg"
+                      class="poster-img rounded-5 mb-2"
+                      alt=""
+                    />
+                    <div class="play-hover">
+                      <div class="play-btn">
+                        <i class="fa-regular fa-circle-play"></i>
+                      </div>
+                    </div>
+                  </div>
+
+                  <span class="fw-bold fs-5">Doctor Strange</span>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="">
+                      <i class="fa-solid fa-star pdf-text-yellow-400 me-1"></i
+                      >7.4
+                    </div>
+                    <div class="">
+                      <i class="fa-regular fa-eye me-1"></i>4.3K
+                      <i class="fa-solid fa-heart ms-2 heart"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="text-start mb-5">
+                  <div class="movie">
+                    <img
+                      src="./img/moneyheist.jpg"
+                      class="poster-img rounded-5 mb-2"
+                      alt=""
+                    />
+                    <div class="play-hover">
+                      <div class="play-btn">
+                        <i class="fa-regular fa-circle-play"></i>
+                      </div>
+                    </div>
+                  </div>
+
+                  <span class="fw-bold fs-5">Money Heist</span>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="">
+                      <i class="fa-solid fa-star pdf-text-yellow-400 me-1"></i
+                      >8.2
+                    </div>
+                    <div class="">
+                      <i class="fa-regular fa-eye me-1"></i>3.1K
+                      <i class="fa-solid fa-heart ms-2 heart"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Catalog -->
+    <div class="container">
+      <div class=""><h2 class="mv-title fw-bolder ms-3">Catalog</h2></div>
+      <div
+        class="d-flex justify-content-between align-items-center my-4 flex-column flex-md-row"
+      >
+        <div
+          class="filter-button-group mb-4 mb-md-0 d-flex justify-content-evenly align-content-center"
+        >
+          <button
+            data-filter="*"
+            class="ms-md-n2 btn shadow-none border-none active-filter-btn me-n2 me-md-0"
+          >
+            All
+          </button>
+          <button
+            data-filter=".series"
+            class="btn shadow-none border-none me-n2 me-md-0"
+          >
+            Series
+          </button>
+          <button
+            data-filter=".movies"
+            class="btn shadow-none border-none me-n2 me-md-0"
+          >
+            Movies
+          </button>
+          <button
+            data-filter=".cartoon"
+            class="btn shadow-none border-none me-n2 me-md-0"
+          >
+            Cartoon
+          </button>
+          <button
+            data-filter=".documentary"
+            class="btn shadow-none border-none me-n2 me-lg-0"
+          >
+            Documentary
+          </button>
+        </div>
+        <!-- Search -->
+        <div class="wrapper">
+          <div class="input-data">
+            <input
+              type="text"
+              class="bg-dark text-white outline-0 search"
+              placeholder=""
+              required
+            />
+            <div class="underline"></div>
+            <label class="search-label"
+              ><i class="fa-regular fa-magnifying-glass me-2"></i>Search</label
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- All -->
+    <div class="container">
+      <div class="movie-list row justify-content-center align-items-center">
+        <div class="movies col-lg-3 col-md-5">
+          <div class="text-start mb-5">
+            <div class="movie">
+              <img
+                src="./img/fury.jpg"
+                class="poster-img rounded-5 mb-2"
+                alt=""
+              />
+              <div class="play-hover">
+                <div class="play-btn">
+                  <i class="fa-regular fa-circle-play"></i>
+                </div>
+              </div>
+            </div>
+
+            <span class="fw-bold fs-5">Fury</span>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="">
+                <i class="fa-solid fa-star pdf-text-yellow-400 me-1"></i>8.0
+              </div>
+              <div class="">
+                <i class="fa-regular fa-eye me-1"></i>5.9K
+                <i class="fa-solid fa-heart ms-2 heart"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="series col-lg-3 col-md-5">
+          <div class="text-start mb-5">
+            <div class="movie">
+              <img
+                src="./img/xfiles.jpg"
+                class="poster-img rounded-5 mb-2"
+                alt=""
+              />
+              <div class="play-hover">
+                <div class="play-btn">
+                  <i class="fa-regular fa-circle-play"></i>
+                </div>
+              </div>
+            </div>
+
+            <span class="fw-bold fs-5">The X-Files</span>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="">
+                <i class="fa-solid fa-star pdf-text-yellow-400 me-1"></i>8.6
+              </div>
+              <div class="">
+                <i class="fa-regular fa-eye me-1"></i>8.1K
+                <i class="fa-solid fa-heart ms-2 heart"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cartoon col-lg-3 col-md-5">
+          <div class="text-start mb-5">
+            <div class="movie">
+              <img
+                src="./img/shrek.jpg"
+                class="poster-img rounded-5 mb-2"
+                alt=""
+              />
+              <div class="play-hover">
+                <div class="play-btn">
+                  <i class="fa-regular fa-circle-play"></i>
+                </div>
+              </div>
+            </div>
+
+            <span class="fw-bold fs-5">Shrek</span>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="">
+                <i class="fa-solid fa-star pdf-text-yellow-400 me-1"></i>7.9
+              </div>
+              <div class="">
+                <i class="fa-regular fa-eye me-1"></i>10K
+                <i class="fa-solid fa-heart ms-2 heart"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="series col-lg-3 col-md-5">
+          <div class="text-start mb-5">
+            <div class="movie">
+              <img
+                src="./img/csi_miami.jpg"
+                class="poster-img rounded-5 mb-2"
+                alt=""
+              />
+              <div class="play-hover">
+                <div class="play-btn">
+                  <i class="fa-regular fa-circle-play"></i>
+                </div>
+              </div>
+            </div>
+
+            <span class="fw-bold fs-5">CSI: Miami</span>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="">
+                <i class="fa-solid fa-star pdf-text-yellow-400 me-1"></i>7.4
+              </div>
+              <div class="">
+                <i class="fa-regular fa-eye me-1"></i>3.3K
+                <i class="fa-solid fa-heart ms-2 heart"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cartoon col-lg-3 col-md-5">
+          <div class="text-start mb-5">
+            <div class="movie">
+              <img
+                src="./img/iceage.jpg"
+                class="poster-img rounded-5 mb-2"
+                alt=""
+              />
+              <div class="play-hover">
+                <div class="play-btn">
+                  <i class="fa-regular fa-circle-play"></i>
+                </div>
+              </div>
+            </div>
+
+            <span class="fw-bold fs-5">Ice Age: The Meltdown</span>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="">
+                <i class="fa-solid fa-star pdf-text-yellow-400 me-1"></i>6.4
+              </div>
+              <div class="">
+                <i class="fa-regular fa-eye me-1"></i>11K
+                <i class="fa-solid fa-heart ms-2 heart"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="documentary movies col-lg-3 col-md-5">
+          <div class="text-start mb-5">
+            <div class="movie">
+              <img
+                src="./img/MissAmericana.jpg"
+                class="poster-img rounded-5 mb-2"
+                alt=""
+              />
+              <div class="play-hover">
+                <div class="play-btn">
+                  <i class="fa-regular fa-circle-play"></i>
+                </div>
+              </div>
+            </div>
+
+            <span class="fw-bold fs-5">Taylor Swift: Miss Americana</span>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="">
+                <i class="fa-solid fa-star pdf-text-yellow-400 me-1"></i>7.3
+              </div>
+              <div class="">
+                <i class="fa-regular fa-eye me-1"></i>22K
+                <i class="fa-solid fa-heart ms-2 heart"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="series col-lg-3 col-md-5">
+          <div class="text-start mb-5">
+            <div class="movie">
+              <img
+                src="./img/24.jpg"
+                class="poster-img rounded-5 mb-2"
+                alt=""
+              />
+              <div class="play-hover">
+                <div class="play-btn">
+                  <i class="fa-regular fa-circle-play"></i>
+                </div>
+              </div>
+            </div>
+
+            <span class="fw-bold fs-5">24</span>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="">
+                <i class="fa-solid fa-star pdf-text-yellow-400 me-1"></i>7.9
+              </div>
+              <div class="">
+                <i class="fa-regular fa-eye me-1"></i>4.9K
+                <i class="fa-solid fa-heart ms-2 heart"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="movies col-lg-3 col-md-5">
+          <div class="text-start mb-5">
+            <div class="movie">
+              <img
+                src="./img/spiderman.jpg"
+                class="poster-img rounded-5 mb-2"
+                alt=""
+              />
+              <div class="play-hover">
+                <div class="play-btn">
+                  <i class="fa-regular fa-circle-play"></i>
+                </div>
+              </div>
+            </div>
+
+            <span class="fw-bold fs-5">Spider Man</span>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="">
+                <i class="fa-solid fa-star pdf-text-yellow-400 me-1"></i>8.4
+              </div>
+              <div class="">
+                <i class="fa-regular fa-eye me-1"></i>9.7K
+                <i class="fa-solid fa-heart ms-2 heart active"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-center align-items-center mb-5">
+      <button class="btn shadow-none view-more fw-bold border-3 rounded-3 px-5">
+        View More
+      </button>
+    </div>
+
+    <!-- FAQ -->
+    <div class="container">
+      <div class="d-flex justify-content-center align-items-center">
+        <h2 class="mt-2 mb-5 faq">Frequently Asked Questions</h2>
+      </div>
+      <div class="px-xl-5 mb-5">
+        <div class="px-xl-5">
+          <div class="px-xl-5">
+            <div class="px-xl-5">
+              <div class="px-xl-5">
+                <div
+                  class="accordion accordion-flush"
+                  id="accordionFlushExample"
+                >
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                      <button
+                        class="d-flex justify-content-between align-items-center item-btn pdf-bg-neutral-800 shadow-none accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseOne"
+                      >
+                        What is Nex Movie?
+                        <i class="fas fa-plus-large"></i>
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseOne"
+                      class="pdf-bg-neutral-700 accordion-collapse collapse"
+                      aria-labelledby="flush-headingOne"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          Nex Movie is a streaming service that offers a wide
+                          variety of award-winning TV shows, movies, anime,
+                          documentaries, and more on thousands of
+                          internet-connected devices.
+                        </p>
+                        <p>
+                          You can watch as much as you want, whenever you want
+                          without a single commercial – all for one low monthly
+                          price. There's always something new to discover and
+                          new TV shows and movies are added every week!
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                      <button
+                        class="d-flex justify-content-between align-items-center item-btn pdf-bg-neutral-800 shadow-none accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseTwo"
+                      >
+                        How much does Nex Movie cost?
+                        <i class="fas fa-plus-large"></i>
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseTwo"
+                      class="pdf-bg-neutral-700 accordion-collapse collapse"
+                      aria-labelledby="flush-headingTwo"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        Watch Nex Movie on your smartphone, tablet, Smart TV,
+                        laptop, or streaming device, all for one fixed monthly
+                        fee. Plans range from USD3.99 to USD11.99 a month. No
+                        extra costs, no contracts.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                      <button
+                        class="d-flex justify-content-between align-items-center item-btn pdf-bg-neutral-800 shadow-none accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseThree"
+                      >
+                        Where can I watch?
+                        <i class="fas fa-plus-large"></i>
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseThree"
+                      class="pdf-bg-neutral-700 accordion-collapse collapse"
+                      aria-labelledby="flush-headingThree"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Aperiam laborum numquam maiores quam omnis
+                        dolorem, blanditiis ipsa asperiores expedita sequi
+                        impedit, saepe eveniet rerum eos, fugiat non ipsum
+                        suscipit alias?
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFour">
+                      <button
+                        class="d-flex justify-content-between align-items-center item-btn pdf-bg-neutral-800 shadow-none accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFour"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseFour"
+                      >
+                        What can I watch on Nex Movie?
+                        <i class="fas fa-plus-large"></i>
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseFour"
+                      class="pdf-bg-neutral-700 accordion-collapse collapse"
+                      aria-labelledby="flush-headingFour"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Aliquid nulla eos, ea illo corrupti blanditiis.
+                        Consequatur ullam ea, nemo quas doloremque id, animi
+                        itaque enim quae officia doloribus voluptate sed.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Subscribe -->
+    <div class="container">
+      <div class="d-flex justify-content-center align-items-center">
+        <div class="mb-4">
+          Ready to watch? Enter your email to create or restart your membership.
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="mb-5">
+        <form class="d-flex justify-content-center align-items-center">
+          <input
+            type="email"
+            class="sub-input ps-2 pe-md-5 py-3 outline-none"
+            placeholder="Email address"
+            required
+          />
+
+          <button class="sub-btn py-3 ps-2 px-md-4 text-white shadow-none">
+            Get Started <i class="fa-solid fa-chevron-right ms-md-2 ms-1"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-- Footer -->
+    <div class="pdf-bg-neutral-800">
+      <div class="container pt-5">
+        <div class="row">
+          <!-- Logo -->
+          <div class="col-md-6 col-lg-3 pb-4 ps-4">
+            <div class="py-md-5">
+              <h1 class="navbar-brand text-uppercase fs-1">
+                <a class="text-white text-decoration-none hover-red" href="#">
+                  <i class="fa-solid fa-clapperboard-play"></i> Nex Movie</a
+                >
+              </h1>
+            </div>
+          </div>
+          <!-- Useful Links -->
+          <div class="col-md-6 col-lg-3 ps-5 pb-4">
+            <h3 class="mv-title mb-4">Useful Links</h3>
+            <ul class="list-unstyled">
+              <li>
+                <a class="text-white text-decoration-none hover-red" href="#">
+                  <i class="fa-solid fa-chevron-right me-1 ms-n3 mb-3"></i>
+                  About</a
+                >
+              </li>
+              <li>
+                <a class="text-white text-decoration-none hover-red" href="#">
+                  <i class="fa-solid fa-chevron-right me-1 ms-n3 mb-3"></i> Help
+                  Center</a
+                >
+              </li>
+              <li>
+                <a class="text-white text-decoration-none hover-red" href="#">
+                  <i class="fa-solid fa-chevron-right me-1 ms-n3 mb-3"></i>
+                  FAQ</a
+                >
+              </li>
+              <li>
+                <a class="text-white text-decoration-none hover-red" href="#">
+                  <i class="fa-solid fa-chevron-right me-1 ms-n3"></i> Contact
+                  Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Categories -->
+          <div class="col-md-6 col-lg-3 ps-5 pb-4">
+            <h3 class="mv-title mb-4">Categories</h3>
+            <div
+              class="d-flex justify-content-start align-items-start flex-md-row flex-column"
+            >
+              <ul class="list-unstyled me-5">
+                <li class="mb-2">
+                  <a class="text-white text-decoration-none hover-red" href="#"
+                    >Movies</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a class="text-white text-decoration-none hover-red" href="#"
+                    >TV Shows</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a class="text-white text-decoration-none hover-red" href="#"
+                    >Comedy</a
+                  >
+                </li>
+                <li>
+                  <a class="text-white text-decoration-none hover-red" href="#"
+                    >Sci-Fi</a
+                  >
+                </li>
+              </ul>
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <a class="text-white text-decoration-none hover-red" href="#"
+                    >Cartoon</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a class="text-white text-decoration-none hover-red" href="#"
+                    >Horror</a
+                  >
+                </li>
+                <li>
+                  <a class="text-white text-decoration-none hover-red" href="#"
+                    >Others</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Get in Touch -->
+          <div class="col-md-6 col-lg-3 ps-5 pb-4">
+            <h3 class="mv-title mb-4">Get in Touch</h3>
+            <!-- <ul
+              class="list-unstyled d-flex justify-content-evenly align-items-center ms-n3"
+            >
+              <li>
+                <div
+                  class="social-icon d-flex justify-content-center align-items-center me-2"
+                >
+                  <i class="fa-brands fa-facebook-f fs-4"></i>
+                </div>
+              </li>
+              <li>
+                <div
+                  class="social-icon d-flex justify-content-center align-items-center me-2"
+                >
+                  <i class="fa-brands fa-twitter fs-4"></i>
+                </div>
+              </li>
+              <li>
+                <div
+                  class="social-icon d-flex justify-content-center align-items-center me-2"
+                >
+                  <i class="fa-brands fa-instagram fs-4"></i>
+                </div>
+              </li>
+              <li>
+                <div
+                  class="social-icon d-flex justify-content-center align-items-center"
+                >
+                  <i class="fa-solid fa-paper-plane fs-4"></i>
+                </div>
+              </li>
+            </ul> -->
+            <ul
+              class="list-unstyled d-flex justify-content-start align-items-center ms-n3"
+            >
+              <li>
+                <a class="text-white hover-red" href="#"
+                  ><i class="fa-brands fa-facebook-f fs-3 me-3"></i
+                ></a>
+              </li>
+              <li>
+                <a class="text-white hover-red" href="#"
+                  ><i class="fa-brands fa-twitter fs-3 me-3"></i
+                ></a>
+              </li>
+              <li>
+                <a class="text-white hover-red" href="#"
+                  ><i class="fa-brands fa-instagram fs-3 me-3"></i
+                ></a>
+              </li>
+              <li>
+                <a class="text-white hover-red" href="#"
+                  ><i class="fa-solid fa-paper-plane fs-3"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Copyright -->
+    <div class="container">
+      <div
+        class="d-flex justify-content-between align-items-center flex-column flex-md-row py-2"
+      >
+        <div class="">&copy; 2022 Nex Movie. All Rights Reserved</div>
+        <div class="">
+          <a
+            class="pdf-text-neutral-400 text-decoration-none hover-red"
+            href="#"
+            >Terms of use</a
+          >
+          <span class="px-1">|</span>
+          <a
+            class="pdf-text-neutral-400 text-decoration-none hover-red"
+            href="#"
+            >Privacy Policy</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- End -->
+    <script src="./node_module/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./node_module/jquery/dist/jquery.min.js"></script>
+    <script src="./packages/isotope.pkgd.min.js"></script>
+    <script src="./node_module/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

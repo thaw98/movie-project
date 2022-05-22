@@ -1,0 +1,47 @@
+{
+  "_from": "colormyar",
+  "_id": "colormyar@1.1.0",
+  "_inBundle": false,
+  "_integrity": "sha512-rWn825Fw1/UNwFCQSiz4vNKGm+2CeSs/crsXD0NWZIT/n5TY53t8TWFzvI1z3Bxz+o4xpjG2zRKqFWPflNE6pg==",
+  "_location": "/colormyar",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "colormyar",
+    "name": "colormyar",
+    "escapedName": "colormyar",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/colormyar/-/colormyar-1.1.0.tgz",
+  "_shasum": "51ac1ccbb712eefd3f93016241c4f4d765137dab",
+  "_spec": "colormyar",
+  "_where": "/home/pyaephyothaw/Desktop/Movie pj",
+  "author": {
+    "name": "sanlinhtike"
+  },
+  "bugs": {
+    "url": "https://github.com/sanlinhtik3/colormyar/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "![preview](https://github.com/sanlinhtik3/pdf-color/raw/main/access/img/screenshot.png)",
+  "homepage": "https://github.com/sanlinhtik3/colormyar#readme",
+  "license": "ISC",
+  "main": "index.js",
+  "name": "colormyar",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanlinhtik3/colormyar.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.1.0"
+}
