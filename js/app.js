@@ -1,3 +1,22 @@
+// Loading
+window.addEventListener("load", (_) => {
+  document.querySelector(".loading").style.display = "none";
+});
+// Menu toggle
+let menuIcon = document.querySelector(".menu-icon");
+menuIcon.addEventListener("click", () => {
+  menuIcon.classList.toggle("show");
+});
+// Scrollreveal
+ScrollReveal({
+  origin: "bottom",
+  distance: "60px",
+  duration: 2000,
+  reset: true,
+}).reveal(".headline", {
+  interval: 200,
+  viewFactor: 0.2,
+});
 // Waypoint
 var waypoint = new Waypoint({
   element: document.getElementById("trending"),

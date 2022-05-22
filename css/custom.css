@@ -2,6 +2,96 @@
   --red: #e50914;
   --gray: #8d8d8d;
 }
+/* Loading */
+.loading {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+.sk-cube-grid {
+  width: 40px;
+  height: 40px;
+  margin: 100px auto;
+}
+
+.sk-cube-grid .sk-cube {
+  width: 33%;
+  height: 33%;
+  background-color: #fff;
+  float: left;
+  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+  animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+}
+.sk-cube-grid .sk-cube1 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.sk-cube-grid .sk-cube2 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+.sk-cube-grid .sk-cube3 {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+.sk-cube-grid .sk-cube4 {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+.sk-cube-grid .sk-cube5 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.sk-cube-grid .sk-cube6 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+.sk-cube-grid .sk-cube7 {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+.sk-cube-grid .sk-cube8 {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+.sk-cube-grid .sk-cube9 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+  0%,
+  70%,
+  100% {
+    -webkit-transform: scale3D(1, 1, 1);
+    transform: scale3D(1, 1, 1);
+  }
+  35% {
+    -webkit-transform: scale3D(0, 0, 1);
+    transform: scale3D(0, 0, 1);
+  }
+}
+
+@keyframes sk-cubeGridScaleDelay {
+  0%,
+  70%,
+  100% {
+    -webkit-transform: scale3D(1, 1, 1);
+    transform: scale3D(1, 1, 1);
+  }
+  35% {
+    -webkit-transform: scale3D(0, 0, 1);
+    transform: scale3D(0, 0, 1);
+  }
+}
 .fs-7 {
   font-size: 0.8rem;
 }
@@ -12,6 +102,47 @@
   border-radius: 10px;
 }
 /* Menu navigation */
+.menu-icon {
+  width: 50px;
+  height: 50px;
+  background: #000;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-icon span {
+  width: 30px;
+  height: 4px;
+  background: #fff;
+  position: absolute;
+  border-radius: 25px;
+  transition: 0.5s;
+}
+.menu-icon span:nth-child(1) {
+  transform: translateY(-12px);
+  width: 30px;
+  left: 10px;
+}
+.menu-icon span:nth-child(2) {
+  transform: translateY(12px);
+  width: 30px;
+  left: 10px;
+}
+.menu-icon.show span:nth-child(3) {
+  transform: translateX(50px);
+  opacity: 0;
+}
+.menu-icon.show span:nth-child(1) {
+  transform: translateY(0) rotate(45deg);
+  width: 30px;
+  transition: 0.125s;
+}
+.menu-icon.show span:nth-child(2) {
+  transform: translateY(0) rotate(315deg);
+  width: 30px;
+  transition: 0.5s;
+}
 .navbar-brand {
   font-family: "Roboto Condensed", sans-serif;
 }

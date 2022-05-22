@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nex Movie</title>
     <!-- Bootstrap + Font Awesome-->
-    <link rel="stylesheet" href="./node_module/colormyar/css/pdf.css" />
+    <link rel="stylesheet" href="./node_modules/colormyar/css/pdf.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./packages/fontawesome/css/all.min.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <script src="./node_module/waypoints/lib/noframework.waypoints.min.js"></script>
+    <!-- FavIcon -->
+    <link rel="icon" type="image/png" href="./img/favico.png" />
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,11 +24,26 @@
       rel="stylesheet"
     />
     <!-- Swiper -->
-    <link rel="stylesheet" href="./node_module/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/custom.css" />
   </head>
   <body>
+    <!-- Loading -->
+    <div class="loading">
+      <div class="sk-cube-grid">
+        <div class="sk-cube sk-cube1"></div>
+        <div class="sk-cube sk-cube2"></div>
+        <div class="sk-cube sk-cube3"></div>
+        <div class="sk-cube sk-cube4"></div>
+        <div class="sk-cube sk-cube5"></div>
+        <div class="sk-cube sk-cube6"></div>
+        <div class="sk-cube sk-cube7"></div>
+        <div class="sk-cube sk-cube8"></div>
+        <div class="sk-cube sk-cube9"></div>
+      </div>
+    </div>
+
     <!-- Navigation -->
     <nav
       class="navbar navbar-control navbar-expand-lg navbar-dark bg-dark animate__animated shadow-md"
@@ -62,7 +78,7 @@
           </a>
         </div>
         <button
-          class="navbar-toggler border-0 ms-2"
+          class="navbar-toggler border-0 shadow-none ms-2"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -70,7 +86,11 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <i class="fa-regular fa-bars fs-2"></i>
+          <div class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul
@@ -101,7 +121,7 @@
       >
         <!-- Left -->
         <div class="col-lg-5 ms-md-5">
-          <div class="ms-lg-5">
+          <div class="headline ms-lg-5">
             <div
               class="d-flex fw-bold justify-content-start align-items-center fs-5 mt-md-4 mt-5"
             >
@@ -148,16 +168,16 @@
           </div>
         </div>
         <!-- Right -->
-        <div class="col-lg-6">
+        <div class="headline col-lg-6">
           <img src="./img/banner.jpg" class="w-100" alt="" />
         </div>
       </div>
     </div>
     <!-- Trending-->
-    <div class="my-5" id="trending">
+    <div class="mt-5" id="trending">
       <div class="container">
         <h2 class="mv-title fw-bolder ms-3">Trending</h2>
-        <div class="mt-5">
+        <div class="headline mt-5">
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -377,7 +397,9 @@
     </div>
     <!-- All -->
     <div class="container">
-      <div class="movie-list row justify-content-center align-items-center">
+      <div
+        class="headline movie-list row justify-content-center align-items-center"
+      >
         <div class="movies col-lg-3 col-md-5">
           <div class="text-start mb-5">
             <div class="movie">
@@ -598,7 +620,7 @@
       </div>
     </div>
 
-    <div class="d-flex justify-content-center align-items-center mb-5">
+    <div class="headline d-flex justify-content-center align-items-center mb-5">
       <button class="btn shadow-none view-more fw-bold border-3 rounded-3 px-5">
         View More
       </button>
@@ -613,7 +635,7 @@
         <div class="px-xl-5">
           <div class="px-xl-5">
             <div class="px-xl-5">
-              <div class="px-xl-5">
+              <div class="headline px-xl-5">
                 <div
                   class="accordion accordion-flush"
                   id="accordionFlushExample"
@@ -749,13 +771,13 @@
     <!-- Subscribe -->
     <div class="container">
       <div class="d-flex justify-content-center align-items-center">
-        <div class="mb-4">
+        <div class="headline mb-4">
           Ready to watch? Enter your email to create or restart your membership.
         </div>
       </div>
     </div>
     <div class="container">
-      <div class="mb-5">
+      <div class="headline mb-5">
         <form class="d-flex justify-content-center align-items-center">
           <input
             type="email"
@@ -776,7 +798,7 @@
         <div class="row">
           <!-- Logo -->
           <div class="col-md-6 col-lg-3 pb-4 ps-4">
-            <div class="py-md-5">
+            <div class="headline py-md-5">
               <h1 class="navbar-brand text-uppercase fs-1">
                 <a class="text-white text-decoration-none hover-red" href="#">
                   <i class="fa-solid fa-clapperboard-play"></i> Nex Movie</a
@@ -785,7 +807,7 @@
             </div>
           </div>
           <!-- Useful Links -->
-          <div class="col-md-6 col-lg-3 ps-5 pb-4">
+          <div class="headline col-md-6 col-lg-3 ps-5 pb-4">
             <h3 class="mv-title mb-4">Useful Links</h3>
             <ul class="list-unstyled">
               <li>
@@ -815,7 +837,7 @@
             </ul>
           </div>
           <!-- Categories -->
-          <div class="col-md-6 col-lg-3 ps-5 pb-4">
+          <div class="headline col-md-6 col-lg-3 ps-5 pb-4">
             <h3 class="mv-title mb-4">Categories</h3>
             <div
               class="d-flex justify-content-start align-items-start flex-md-row flex-column"
@@ -862,7 +884,7 @@
             </div>
           </div>
           <!-- Get in Touch -->
-          <div class="col-md-6 col-lg-3 ps-5 pb-4">
+          <div class="headline col-md-6 col-lg-3 ps-5 pb-4">
             <h3 class="mv-title mb-4">Get in Touch</h3>
             <!-- <ul
               class="list-unstyled d-flex justify-content-evenly align-items-center ms-n3"
@@ -946,10 +968,13 @@
       </div>
     </div>
     <!-- End -->
-    <script src="./node_module/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./node_module/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./node_modules/waypoints/lib/noframework.waypoints.min.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/scrollreveal/dist/scrollreveal.min.js"></script>
     <script src="./packages/isotope.pkgd.min.js"></script>
-    <script src="./node_module/swiper/swiper-bundle.min.js"></script>
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+
     <script src="./js/app.js"></script>
   </body>
 </html>
