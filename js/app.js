@@ -10,7 +10,6 @@ menuIcon.addEventListener("click", () => {
 // Scrollreveal
 ScrollReveal({
   origin: "bottom",
-  distance: "60px",
   duration: 2000,
   reset: true,
 }).reveal(".headline", {
