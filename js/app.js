@@ -13,7 +13,6 @@ ScrollReveal({
   duration: 2000,
   reset: true,
 }).reveal(".headline", {
-  interval: 200,
   viewFactor: 0.2,
 });
 // Waypoint
